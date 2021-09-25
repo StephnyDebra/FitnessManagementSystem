@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.powerwomen">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.POWERWOMEN">
+        <activity android:name=".FoodCal"
+            android:label="FOOD CALORIES METER"></activity>
+        <activity android:name=".ViewLow"
+            android:label="LOW CARB DIET"
+            android:parentActivityName=".Viewplans"/>
+        <activity android:name=".Viewplans"
+            android:label="VIEW PLANS"
+            android:parentActivityName=".Home2"/>
+        <activity android:name=".mydiet"
+            android:label="MY DIET LIST"
+            android:parentActivityName=".Home2"/>
+        <activity android:name=".Home2"
+            android:label="NUTRITION"
+            android:parentActivityName=".Home1"/>
+        <activity android:name=".Home1"
+            android:label="HOME"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity"
+            android:label="WOMEN POWER">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
